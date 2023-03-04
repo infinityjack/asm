@@ -1,0 +1,82 @@
+explicit:
+
+    syntax:
+        [variable_name] define-directive init_value
+
+        notes:
+            variable can only allocate differ bytes,
+            it don't have any type, but can map to 
+            other lang, like c.
+
+        basic forms of define-directive:
+
+            db(define bytes):
+                allocate 1 byte, also can string 
+                same as char in c 
+
+            dw(define word):
+                allocate 2 bytes
+                same as int_16 in c 
+
+            dd(define double_word):
+                allocate 4 bytes
+                same as int_32 in c 
+
+            dq(define quad_word):
+                allocate 8 bytes
+                same as double in c 
+
+            dt(define ten_bytes):
+                allocate 10 bytes
+
+
+    e.g.:
+        choice_yes db 'y'
+
+        prime      dd 1023
+
+
+implicit:
+    also can un_init variable, but reserve space
+    syntax:
+        resb(reserve a byte)
+        resw(reserve a word)
+        resd(reserve a double_word)
+        resq(reserve a quad_word)
+        rest(reserve a ten_bytes)
+
+init array:
+    syntax:
+        times directive allows multi-init to same value.
+
+        e.g.:
+            new_array times 10 dd 0 ;init int array with 10 size
+
+define constant:
+    syntax:
+        constant_name equ experssion
+
+    e.g.:
+        sys_exit equ 1
+
+        sys_write equ 4
+
+        stdin equ 0
+
+        stdout equ 1
+
+    %assign:
+        define numeric constant, allows redefinition,
+        this directive is case-sensitive
+
+    %define:
+        allows define numeric and string constants.
+        similar to #define in c.
+        case-sensitive
+
+        e.g.:
+            %define ptr [ebp + 4]
+
+
+    
+        
