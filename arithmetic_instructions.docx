@@ -1,0 +1,38 @@
+inc:
+    syntax:
+        inc destinction
+
+    target operand destinction can be 8-bit, 16-bit, or 32-bit
+
+    e.g.:
+        inc ebx;increment 32-bit reg
+        inc dl;increment 8-bit reg
+        inc [count];increment count variable
+
+dec:
+    syntax:
+        dec destinction
+
+    target operand destinction can be 8-bit, 16-bit, or 32-bit
+
+
+add, sub:
+    syntax:
+        add/sub destinction, source
+
+    instruction take place:
+        reg to reg
+        mem to reg
+        reg to mem
+        reg to const data
+        mem to const data
+
+mul/imul:
+    syntax:
+        mul/imul multiplier
+
+div/idiv:
+    syntax:
+        div/idiv divisor
+
+    

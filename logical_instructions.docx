@@ -1,0 +1,40 @@
+instruction:        format:
+    and         and op1, op2
+
+    or          or op1, op2
+
+    xor         xor op1, op2
+
+    test        tets op1, op2
+
+    not         not op1
+
+
+
+e.g.:
+and:
+    The AND operation can be used for clearing one or more bits
+
+    Operand1: 	0101
+    Operand2: 	0011
+    ----------------------------
+    After AND -> Operand1:	0001
+
+or:
+    The OR operation can be used for setting one or more bits
+    Operand1:     0101
+    Operand2:     0011
+    ----------------------------
+    After OR -> Operand1:    0111
+
+
+xor:
+    XORing an operand with itself changes the operand to 0. This is used to clear a register.
+    Operand1:     0101
+    Operand2:     0011
+    ----------------------------
+    After XOR -> Operand1:    0110
+
+not:
+    Operand1:    0101 0011
+    After NOT -> Operand1:    1010 1100
