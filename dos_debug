@@ -1,0 +1,17 @@
+a list of some commonly used hotkeys in Debug:
+
+    a - Assemble
+    d - Dump
+    e - Edit
+    g - Go
+    p - Proceed
+    q - Quit
+    r - Register
+    t - Trace
+    u - Unassemble
+    F5 - Step over (execute the current instruction and pause)
+    F8 - Step into (execute the current instruction, entering any subroutines it calls)
+    Ctrl+C - Interrupt (halt the program's execution)
+    Ctrl+G - Display current instruction location
+    Ctrl+R - Display or modify register values
+    Ctrl+T - Display or modify the trace flag
